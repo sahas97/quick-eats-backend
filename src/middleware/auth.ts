@@ -18,7 +18,7 @@ export const jwtCheck = auth({
   tokenSigningAlg: "RS256",
 });
 
-export const jwtPrase = async (
+export const jwtParse = async (
   req: Request,
   res: Response,
   next: NextFunction

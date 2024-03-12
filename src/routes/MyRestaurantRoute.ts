@@ -14,16 +14,16 @@ const upload = multer({
   },
 });
 
-//localhost:8000/api/my/resturant
-http: router.get(
+http://localhost:8000/api/my/resturant
+router.get(
   "/",
   jwtCheck,
   jwtParse,
   MyRestaurantController.getMyRestaurant
 );
 
-//localhost:8000/api/my/resturant
-http: router.post(
+http://localhost:8000/api/my/resturant
+router.post(
   "/",
   upload.single("imageFile"),
   validateMyRestaurantRequest,
@@ -32,6 +32,7 @@ http: router.post(
   MyRestaurantController.createMyResturent
 );
 
+http://localhost:8000/api/my/resturant
 router.put(
   "/",
   upload.single("imageFile"),

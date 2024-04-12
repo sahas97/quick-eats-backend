@@ -104,6 +104,7 @@ const createCheckoutSession = async (req: Request, res: Response) => {
     }
 
     await newOrder.save();
+    console.log(session.url );
     res.json({ url: session.url });
   } catch (error: any) {
     console.log(error);
